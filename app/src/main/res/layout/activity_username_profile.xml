@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsernameProfile">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile info"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please provide your name an optional profile photo"
+        android:textSize="@dimen/_16ssp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/person_green_icon"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="@dimen/_2sdp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Username"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:background="@drawable/btn_rounded_corner"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="Next" />
+
+    <ProgressBar
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#4CAF50"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/progressbar"/>
+
+
+
+</LinearLayout>
